@@ -1,4 +1,4 @@
-# EAPBurst – WPA Enterprise Authentication Testing
+# EAPBurst – WPA Enterprise Bruteforcing
 
 `eapburst.py` performs authorized online PEAP/MSCHAPv2 authentication testing against a WPA-Enterprise network. It tests usernames using one password or a password list, with one worker per wireless interface.
 
