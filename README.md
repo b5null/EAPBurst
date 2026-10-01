@@ -29,7 +29,14 @@ Install online:
 python3 -m pip install twisted wpa_supplicant service_identity cryptography pyOpenSSL
 ```
 
-For an offline host, prepare compatible packages on a connected system, transfer them in a directory named `wheels`, then install:
+For an offline host, prepare compatible packages on a connected system by downloading them:
+
+```bash
+mkdir -p wheels
+python3 -m pip download -d wheels twisted wpa_supplicant service_identity cryptography pyOpenSSL
+```
+
+Transfer them in a directory named `wheels`, then install:
 
 ```bash
 python3 -m pip install --no-index --find-links ./wheels twisted wpa_supplicant service_identity cryptography pyOpenSSL
